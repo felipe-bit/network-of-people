@@ -1,0 +1,304 @@
+/* Reseta alguns estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #148bdb;
+}
+
+/* Menu de Navegação */
+#header {
+    background-color: #072064;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#header h1 {
+    font-size: 1.5rem;
+}
+
+#header .nav-links {
+    list-style: none;
+}
+
+#header .nav-links li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+#header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Conteúdo Principal */
+#main-content {
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+#main-content .intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#main-content .intro p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* Usuários Recomendados */
+.user-recommendations h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.user-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.user-card {
+    background-color: rgba(9, 101, 221, 0.797);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(5, 161, 208, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    margin: 1rem;
+    text-align: left;
+}
+
+.user-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.user-card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.user-card .btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Seção de Destaques */
+.highlights {
+    margin-top: 3rem;
+}
+
+.highlights h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.highlights p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.highlight-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.highlight-item {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.highlight-item h4 {
+    font-size: 1.3rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Rodapé */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+#footer .footer-links {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+#footer .footer-links li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+#footer .footer-links a {
+    color: #FFD700;
+    text-decoration: none;
+}
+/* Estilo da Página de Perfil */
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.profile-header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.profile-header p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.projects-section h2 {
+    font-size: 1.8rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.projects-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects-section li {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-contact {
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
+/* Estilo da Seção de Usuários */
+.users-section {
+    padding: 2rem 1.5rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.users-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.user-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.user-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    margin: 1rem;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-10px);
+}
+
+.user-card h3 {
+    font-size: 1.4rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+.user-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.user-card .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.user-card .btn:hover {
+    background-color: #0056b3;
+}

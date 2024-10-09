@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Quiz - Project Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Personalize sua Experiência</h1>
+        <p>Responda o questionário abaixo para que possamos recomendar projetos que combinem com seus interesses e habilidades.</p>
+        
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <form id="quizForm">
+            <!-- Perguntas do Quiz -->
+            <div class="quiz-question active" id="question1">
+                <h3>1. Qual é o seu objetivo principal na plataforma?</h3>
+                <label><input type="radio" name="objective" value="Colaborar em projetos criativos" required> A) Colaborar em projetos criativos</label><br>
+                <label><input type="radio" name="objective" value="Contribuir com habilidades técnicas"> B) Contribuir com habilidades técnicas</label><br>
+                <label><input type="radio" name="objective" value="Encontrar parcerias para meu próprio projeto"> C) Encontrar parcerias para meu próprio projeto</label><br>
+                <label><input type="radio" name="objective" value="Voluntariar-me para causas sociais"> D) Voluntariar-me para causas sociais</label><br>
+                <label><input type="radio" name="objective" value="Participar de projetos remunerados"> E) Participar de projetos remunerados</label>
+            </div>
+
+            <div class="quiz-question" id="question2">
+                <h3>2. Em qual área você possui mais experiência ou interesse em atuar?</h3>
+                <label><input type="radio" name="experience" value="Tecnologia e Desenvolvimento de Software" required> A) Tecnologia e Desenvolvimento de Software</label><br>
+                <label><input type="radio" name="experience" value="Design Gráfico e Multimídia"> B) Design Gráfico e Multimídia</label><br>
+                <label><input type="radio" name="experience" value="Marketing e Comunicação"> C) Marketing e Comunicação</label><br>
+                <label><input type="radio" name="experience" value="Sustentabilidade e Meio Ambiente"> D) Sustentabilidade e Meio Ambiente</label><br>
+                <label><input type="radio" name="experience" value="Outro"> E) Outro: <input type="text" placeholder="Especifique"></label>
+            </div>
+
+            <!-- Continue com as perguntas 3 a 10 -->
+            <div class="quiz-question" id="question3">
+                <h3>3. Você prefere trabalhar de forma independente ou em equipe?</h3>
+                <label><input type="radio" name="work_style" value="Independente" required> A) Independente</label><br>
+                <label><input type="radio" name="work_style" value="Em equipe"> B) Em equipe</label><br>
+                <label><input type="radio" name="work_style" value="Tanto faz"> C) Tanto faz</label>
+            </div>
+
+            <div class="quiz-question" id="question4">
+                <h3>4. Qual é a sua disponibilidade para participar de projetos?</h3>
+                <label><input type="radio" name="availability" value="Algumas horas por semana" required> A) Algumas horas por semana</label><br>
+                <label><input type="radio" name="availability" value="Finais de semana"> B) Finais de semana</label><br>
+                <label><input type="radio" name="availability" value="Período integral"> C) Período integral</label><br>
+                <label><input type="radio" name="availability" value="Apenas projetos rápidos"> D) Apenas projetos rápidos</label>
+            </div>
+
+            <div class="quiz-question" id="question5">
+                <h3>5. Que tipo de projetos mais te interessam?</h3>
+                <label><input type="radio" name="project_type" value="Criativos e Artísticos" required> A) Criativos e Artísticos</label><br>
+                <label><input type="radio" name="project_type" value="Tecnologia e Inovação"> B) Tecnologia e Inovação</label><br>
+                <label><input type="radio" name="project_type" value="Voluntariado e Causas Sociais"> C) Voluntariado e Causas Sociais</label><br>
+                <label><input type="radio" name="project_type" value="Projetos Remunerados"> D) Projetos Remunerados</label>
+            </div>
+
+            <div class="quiz-question" id="question6">
+                <h3>6. Você gosta de aprender novas habilidades?</h3>
+                <label><input type="radio" name="learning" value="Sim, estou sempre aprendendo" required> A) Sim, estou sempre aprendendo</label><br>
+                <label><input type="radio" name="learning" value="Às vezes, dependendo do projeto"> B) Às vezes, dependendo do projeto</label><br>
+                <label><input type="radio" name="learning" value="Não, prefiro trabalhar com o que já sei"> C) Não, prefiro trabalhar com o que já sei</label>
+            </div>
+
+            <div class="quiz-question" id="question7">
+                <h3>7. Qual a sua faixa etária?</h3>
+                <label><input type="radio" name="age" value="Menos de 18" required> A) Menos de 18</label><br>
+                <label><input type="radio" name="age" value="18-24"> B) 18-24</label><br>
+                <label><input type="radio" name="age" value="25-34"> C) 25-34</label><br>
+                <label><input type="radio" name="age" value="35-44"> D) 35-44</label><br>
+                <label><input type="radio" name="age" value="45+"> E) 45+</label>
+            </div>
+
+            <div class="quiz-question" id="question8">
+                <h3>8. Qual seu nível de conforto com tecnologia?</h3>
+                <label><input type="radio" name="tech_comfort" value="Muito confortável" required> A) Muito confortável</label><br>
+                <label><input type="radio" name="tech_comfort" value="Moderadamente confortável"> B) Moderadamente confortável</label><br>
+                <label><input type="radio" name="tech_comfort" value="Um pouco desconfortável"> C) Um pouco desconfortável</label><br>
+                <label><input type="radio" name="tech_comfort" value="Nada confortável"> D) Nada confortável</label>
+            </div>
+
+            <div class="quiz-question" id="question9">
+                <h3>9. Você prefere projetos com objetivos claros ou que permitem mais liberdade criativa?</h3>
+                <label><input type="radio" name="project_preference" value="Objetivos claros" required> A) Objetivos claros</label><br>
+                <label><input type="radio" name="project_preference" value="Liberdade criativa"> B) Liberdade criativa</label><br>
+                <label><input type="radio" name="project_preference" value="Tanto faz"> C) Tanto faz</label>
+            </div>
+
+            <div class="quiz-question" id="question10">
+                <h3>10. Qual é o seu nível de experiência profissional?</h3>
+                <label><input type="radio" name="experience_level" value="Iniciante" required> A) Iniciante</label><br>
+                <label><input type="radio" name="experience_level" value="Intermediário"> B) Intermediário</label><br>
+                <label><input type="radio" name="experience_level" value="Avançado"> C) Avançado</label><br>
+                <label><input type="radio" name="experience_level" value="Especialista"> D) Especialista</label>
+            </div>
+
+            <!-- Botões de navegação -->
+            <div class="quiz-navigation">
+                <button type="button" id="prevBtn" class="btn" onclick="changeQuestion(-1)">Anterior</button>
+                <button type="button" id="nextBtn" class="btn" onclick="changeQuestion(1)">Próxima</button>
+            </div>
+
+            <div class="quiz-submit" id="submitBtnContainer" style="display: none;">
+                <button id="submitQuiz" onclick="redirectToHome()">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <script>
+        // Funções para o botão de próximo/anterior
+        let currentQuestion = 1;
+        const totalQuestions = 10; // Ajuste este número de acordo com o total de perguntas
+
+        function showQuestion(number) {
+            const questions = document.querySelectorAll('.quiz-question');
+            questions.forEach((question, index) => {
+                question.classList.remove('active');
+                if (index === number - 1) {
+                    question.classList.add('active');
+                }
+            });
+        }
+
+        function changeQuestion(direction) {
+            currentQuestion += direction;
+            showQuestion(currentQuestion);
+
+            // Ajustar visibilidade dos botões
+            document.getElementById('prevBtn').style.display = currentQuestion === 1 ? 'none' : 'inline-block';
+            document.getElementById('nextBtn').style.display = currentQuestion === totalQuestions ? 'none' : 'inline-block';
+            document.getElementById('submitBtnContainer').style.display = currentQuestion === totalQuestions ? 'block' : 'none';
+        }
+
+        // Inicia o quiz na primeira questão
+        showQuestion(currentQuestion);
+        function redirectToHome() {
+    window.location.href = "index.html"; // redireciona para a página inicial
+}
+
+    </script>
+</body>
+</html>

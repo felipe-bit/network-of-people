@@ -1,0 +1,243 @@
+/* Estilo da Página de Perfil */
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.profile-header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.projects-section {
+    margin-bottom: 2rem;
+}
+
+.projects-section h2 {
+    font-size: 1.8rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.project-card .btn {
+    padding: 0.4rem 0.8rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card .btn:hover {
+    background-color: #0056b3;
+}
+
+.user-rating {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.user-rating h2 {
+    font-size: 1.6rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+.user-rating p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+/* Menu de Navegação */
+#header {
+    background-color: #072064;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+ .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#header h1 {
+    font-size: 1.5rem;
+}
+
+#header .nav-links {
+    list-style: none;
+}
+
+#header .nav-links li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+#header .nav-links a {
+    color: #072064;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.navbar {
+    background-color: #072064;
+    padding: 1rem;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 1rem;
+}
+
+.nav-menu a {
+    background-color: #274eb7;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.nav-menu a:hover {
+    background-color: #0056b3;
+}
+
+.profile-btn {
+    background-color: #6600ff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.profile-btn:hover {
+    background-color: rgb(0, 38, 255);
+    color: #ffffff;
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o contêiner de fundo */
+.background {
+    background-image: url('imagem-fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Menu de navegação */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 1rem;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #FF5722;
+    border-radius: 5px;
+}
+
+/* Conteúdo principal */
+.content {
+    max-width: 600px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-top: 4rem; /* espaço extra para o conteúdo */
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}

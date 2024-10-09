@@ -1,0 +1,618 @@
+
+/* Reseta alguns estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #148bdb;
+}
+
+/* Menu de Navegação */
+#header {
+    background-color: #072064;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+ .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#header h1 {
+    font-size: 1.5rem;
+}
+
+#header .nav-links {
+    list-style: none;
+}
+
+#header .nav-links li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+#header .nav-links a {
+    color: #072064;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Conteúdo Principal */
+#main-content {
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+#main-content .intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#main-content .intro p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+#main-content .project-proposals h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#main-content .project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#main-content .project-card {
+    background-color: rgba(9, 101, 221, 0.797);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(5, 161, 208, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    margin: 1rem;
+    text-align: left;
+}
+
+#main-content .project-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+#main-content .project-card p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#main-content .project-card .btn {
+    display: inline-block;
+    background-color: #06448c;
+    color: #cfcdcd;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Rodapé */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+#footer .footer-links {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+#footer .footer-links li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+#footer .footer-links a {
+    color: #FFD700;
+    text-decoration: none;
+}
+/* Estilo da Seção de Benefícios */
+#benefits {
+    padding: 3rem 1.5rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    background-image: url(https://blog.bomvalor.com.br/wp-content/uploads/2023/07/Redes-Colaborativas.png);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow:-10px 11px 1px 0px black;
+}
+#benefits > .container{
+    color: #388E3C;
+}
+
+#benefits h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+#benefits p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+#benefits .benefit-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#benefits .benefit-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 250px;
+    margin: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#benefits .benefit-item:hover {
+    transform: translateY(-10px);
+}
+
+#benefits .benefit-item img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+#benefits .benefit-item h3 {
+    font-size: 1.3rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+#benefits .benefit-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+/* Estilo da Seção de Projetos em Destaque */
+#featured-projects {
+    padding: 3rem 1.5rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#featured-projects h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+#featured-projects p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+#featured-projects .project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#featured-projects .project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    margin: 1rem;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+#featured-projects .project-card:hover {
+    transform: translateY(-10px);
+}
+
+#featured-projects .project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+#featured-projects .project-card h3 {
+    font-size: 1.3rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+#featured-projects .project-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+#featured-projects .project-card .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#featured-projects .project-card .btn:hover {
+    background-color: #0056b3;
+}
+/* Estilo do Botão de Acesso ao Perfil */
+.profile-access .btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.profile-access .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do Menu de Navegação */
+.navbar {
+    background-color: #072064;
+    padding: 1rem;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 1rem;
+}
+
+.nav-menu a {
+    background-color: #274eb7;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.nav-menu a:hover {
+    background-color: #0056b3;
+}
+
+.profile-btn {
+    background-color: #6600ff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.profile-btn:hover {
+    background-color: rgb(0, 38, 255);
+    color: #ffffff;
+}
+
+/* Container Principal */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Descrição do Projeto */
+.project-description, .company-info, .participants {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-description h2, .company-info h2, .participants h2 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.project-description p, .company-info p, .participants ul {
+    margin: 0;
+    color: #555;
+}
+
+/* Informações da Empresa */
+.company-info {
+    margin-top: 1rem;
+}
+
+/* Lista de Participantes */
+.participants ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.participants li {
+    margin: 0.5rem 0;
+    color: #010000;
+}
+
+/* Botão Quadro de Ideias */
+.ideas-board {
+    margin-top: 1.5rem;
+}
+
+.btn-ideas-board {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3156c4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ideas-board:hover {
+    background-color: #0056b3;
+}
+/* Container Principal */
+.ideas-board-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Seção do Chat */
+.chat-section {
+    flex: 1;
+    margin-right: 2rem;
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-section h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.messages {
+    height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+}
+
+.messages p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.input-box {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-box button {
+    padding: 0.75rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-box button:hover {
+    background-color: #0056b3;
+}
+
+.chat-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-option {
+    flex: 1;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-option:hover {
+    background-color: #388E3C;
+}
+
+/* Seção de Votação */
+.voting-section {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.voting-section h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.idea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+}
+
+.idea p {
+    margin: 0;
+    color: #555;
+}
+
+.vote-btn {
+    padding: 0.5rem 1rem;
+    background-color: #0c0c81;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vote-btn:hover {
+    background-color: #E64A19;
+}
+
+.votes {
+    margin-left: 1rem;
+    color: #555;
+}
+
+/* Página Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.75rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+/* Estilo dos Projetos */
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #f0f0f0;
+}
+
+.project-card .btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #FFD700;
+    color: #007BFF;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.project-card .btn:hover {
+    background-color: #FFC700;
+}
+

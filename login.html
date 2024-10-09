@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Plataforma de Projetos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="login-wrapper">
+        <header>
+            <h1>Plataforma de Projetos</h1>
+        </header>
+        
+        <main>
+            <div class="login-container">
+                <h2>Bem-vindo de Volta!</h2>
+                <p>Entre para explorar novas oportunidades de colaboração.</p>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Digite sua senha" required>
+                    </div>
+                    <button type="submit" class="login-btn">Entrar</button>
+                </form>
+                <p class="signup-link">Novo por aqui? <a href="criar-conta.html">Crie uma conta</a></p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Plataforma de Projetos. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o envio padrão do formulário
+            // Redireciona para a página do quiz após o login
+            window.location.href = 'quiz.html';
+        });
+    </script>
+</body>
+</html>
